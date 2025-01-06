@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.background{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.637)),url(/imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+}
+body{
+    color: #343434;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(58 56 57 / 59%) !important;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    scroll-behavior: smooth;
+    z-index: 999;
+
+}
+.navbar-toggler {
+    background-color: white;
+    margin-top: 10px;
+}
+.navbar-nav a{
+    color: rgb(246, 244, 244);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.navbar-nav a:focus{
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+.header{
+    color: white;
+}
+.header h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    .header h3::after{
+    font-weight: 400;
+    content: "Developer";
+    animation-name: text;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+.icon{
+    background-color: rgba(0, 0, 0, 0.444);
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 7px;
+}
+.icon a{
+    color: #fff;
+}
+
+.test{
+    height: 70%;
+    border: 3px dotted rgba(5, 5, 5, 0.149);
+    transform: translateY(43%);
+    width: 50%;
+}
+
+
+.about img{
+    transform: translate(20px,-65%);
+    z-index: -1;
+
+}
+.about-logo h2{
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-logo p{
+  
+color: #999;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;  
+}
+.about-ph p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    margin-bottom: 10px;
+}
+.about-ph span{
+    font-weight: 700;
+}
+.web{
+    background-color: red;
+    border-radius: 5px;
+    background-color: #e8e7e7;
+    width: 100%;
+    color: #fff;
+}
+.web .wep-in{
+    width: 95%;
+    background-color: #1c1c1c;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    animation-name: wep;
+    animation-duration: 2s all;
+    animation-iteration-count: infinite;
+}
+.web .wep-2-in{
+    width: 80%;
+    background-color: #1c1c1c;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.web .wep-3-in{
+    width: 90%;
+    background-color: #1c1c1c;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+button {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button-1 button{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.button-1 button:hover{
+    background-color: transparent;
+    color: black;
+}
+.button-2 button:hover{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.services{
+    background: #f7f7f7;
+    
+}
+.services h1, .portfolio h1, .Testimonials h1, .team h1, .contact h1{
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    font-family: "Montserrat", sans-serif
+
+}
+
+
+.services h1::after{
+    content: "";
+    width: 16%;
+    height: 50px;
+   position: relative;
+   top: 70px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%);
+   border-bottom: 3px dotted rgba(100, 100, 100, 0.083);
+    position: absolute;
+}
+.services i{
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.services h3{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.services p{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.in-service{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.in-service:hover i{
+    background-color: black;
+    color: white;
+}
+
+.portfolio h1{
+    position: relative;
+}
+.portfolio h1::after{
+    content: "";
+    width: 16%;
+    height: 50px;
+   top: 20px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%);
+   border-bottom: 3px dotted rgba(100, 100, 100, 0.183);
+    position: absolute;
+}
+.in-protfolio{
+    position: relative;
+}
+.text-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(10px);
+}
+.text-icon i{
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+    margin: 0 1px;
+}
+.text-icon i:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.icon-2{
+    transform: translateY(2px);
+    transition: all 0.5s;
+
+}
+.text-icon h6{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px
+}
+
+.in-protfolio:hover .text-icon{
+    opacity: 1;
+    transform: translateY(0);
+}
+.in-protfolio:hover .icon-2{
+    transform: translateY(0);
+}
+.in-protfolio:hover .text-icon h6{
+    transform: translateY(10px);
+}
+
+.nav-link {
+    color: black;
+}
+.Testimonials{
+    background-color: #f7f7f7;
+}
+.Testimonials h1{
+    position: relative;
+}
+.Testimonials h1::after{
+    content: "";
+    width: 16%;
+    height: 50px;
+
+   top: 20px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%);
+   border-bottom: 3px dotted rgba(100, 100, 100, 0.154);
+    position: absolute;
+}
+.Testimonials img{
+    width: 9%;
+    border-radius: 50%;
+} 
+.Testimonials p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+    margin-top: 20px;
+}
+.Testimonials h6{
+    color: #748182;
+    font-size: 13px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+.number h1{
+    font-weight: 800;
+}
+.number p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: rgb(116, 129, 130);
+    margin: 0px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.team{
+    background-color: #f4f4f4;
+}
+.team h1::after{
+    content: "";
+    width: 16%;
+    height: 50px;
+   position: relative;
+   top: 20px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%);
+   border-bottom: 3px dotted rgba(100, 100, 100, 0.195);
+    position: absolute;
+}
+.icon-team{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.895);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+.in-team{
+    overflow: hidden;
+}
+.img-team img{
+    transition: 0.7s;
+}
+.in-team:hover .img-team img{
+    transform: scale(1.2);
+}
+.in-team:hover .icon-team{
+opacity: 1;
+transform: rotateY(360deg);
+}
+
+.icon-team i{
+    margin: 0 5px;
+    transition: 0.7s;
+    background-color: black;
+    padding: 9px;
+    font-size: 19px;
+    border-radius: 50%;
+    color: white;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.icon-team i:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.in-team-1{
+    background-color: #585858;
+    color: white;
+}
+.in-team-1 h3{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.in-team-1 span{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+.contact h1::after{
+    content: "";
+    width: 16%;
+    height: 50px;
+   position: relative;
+   top: 70px;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,-50%);
+   border-bottom: 3px dotted rgba(100, 100, 100, 0.195);
+    position: absolute;
+}
+.contact i{
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.in-contact:hover i{
+    background-color: black;
+    color: white;
+
+}
+.contact p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.input-1{
+    width: 80%;
+}
+.input-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+    height: 40px;
+}
+.message{
+    width: 100%;
+}
+.message input{
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+.message input::placeholder{
+    position: absolute;
+    top: 5px;
+}
+.input-1 button{
+    padding: 7px 38px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+    transform: translateY(20%);
+}
+.input-1 button:hover{
+      border: 1px solid #1c1c1c;background-color: transparent;
+      color: black;
+      
+}
+input:focus{
+    outline: none;
+}
+form{
+    width: 100%;
+}
+.footer{
+    background-color: #1c1c1c;
+    position: relative;
+    bottom: -20px;
+    color: #748182;
+}
+form input:active{
+    border: none;
+}
